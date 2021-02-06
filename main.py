@@ -1,5 +1,6 @@
 import random
 from modified_rolls import modified_rolls
+from city_generation.test import test
 
 
 choice = -99
@@ -12,6 +13,8 @@ while choice != 0:
     print("Option 5: Roll a D4")
     print("Option 6: Roll a D100")
     print("Option 7: Roll a modified")
+    print("Option 8: Roll for City Generation")
+    print("Option 9: ")
 
     choice = int(input("Pick your option: "))
     print()
@@ -56,6 +59,11 @@ while choice != 0:
     elif(choice == 7):
         print("Rolling a modified")
         print(modified_rolls())
+    
+    elif(choice == 8):
+        print("Generating City Block")
+        print(test())
+
 
     elif(choice == 0):
         print("Thanks for rolling!")
