@@ -1,6 +1,6 @@
 import random
 from modified_rolls import modified_rolls
-from city_generation.test import test
+from city_generation.building_generation import city_block
 
 
 choice = -99
@@ -62,7 +62,7 @@ while choice != 0:
     
     elif(choice == 8):
         print("Generating City Block")
-        print(test())
+        city_block()
 
 
     elif(choice == 0):
